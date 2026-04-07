@@ -11,4 +11,3 @@ curso.push("javascript");
 vtest.push("Romario");
 console.log(vtest);
 console.log(curso);
-//# sourceMappingURL=aula2.js.map
