@@ -50,3 +50,13 @@ const sala3 = new Cursos(10,20,30);
 */
     console.log(`A sala 1 tem o total de ${sala1.calculoHoras()} horas`);
 
+/*Dicas Rápidas:
+class: O projeto (molde).
+
+this: Referência ao próprio objeto ("minhas horas", "meu nome").
+
+new: O comando que aciona o Construtor para fabricar o objeto.
+
+(): Sempre que vir parênteses depois de um nome, é uma ação sendo executada (uma função ou método).
+*/
+
