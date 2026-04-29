@@ -39,7 +39,7 @@ class Cursos {
 */
 
 const sala1= new Cursos(30,18,20);// Cria a sala 1 com essas horas específicas
-const sala2 = new Cursos(30,40,60)
+const sala2 = new Cursos(30,40,60);
 const sala3 = new Cursos(10,20,30);
 
 
@@ -48,7 +48,11 @@ const sala3 = new Cursos(10,20,30);
 /* Chamamos o método 'calculoHoras()' através do objeto (sala1.metodo).
    Usamos `${}` (Template String) para colocar o resultado dentro do texto.
 */
-    console.log(`A sala 1 tem o total de ${sala1.calculoHoras()} horas`);
+    console.log(`A sala 1 tem o total de ${sala1.calculoHoras()} horas\n  A sala 2 tem o total de ${sala2.calculoHoras()} horas\n
+    A sala 3 tem o total de ${sala3.calculoHoras()} horas`
+
+);
+
 
 /*Dicas Rápidas:
 class: O projeto (molde).
