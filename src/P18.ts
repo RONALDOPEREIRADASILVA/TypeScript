@@ -4,12 +4,12 @@ Métodos de classes em Typescript
 */
 class Computador{
     //define as características 
-   name:String;
+   name:string;
    ram: number;
    cpu: number;
    ligado:boolean;
 
-   constructor(nome:String,ram:number,cpu:number){
+   constructor(nome:string,ram:number,cpu:number){
     //o construtor é o que "nasse" o objeto.
     //inicializa o objeto com os valores que você passa
     this.name=nome;
