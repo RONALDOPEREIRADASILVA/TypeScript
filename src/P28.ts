@@ -7,10 +7,21 @@ interface curso{
     desc:string;
     aulas:number;
     maxAulas?:number;
+    iniciarCurso?(teste:string):void;
 }
-let curso1:curso;
-let curso2:curso;
-let curso3:curso;
+let curso1:cursoProgramacao;
+let curso2:cursoProgramacao;
+let curso3:cursoArtes;
+interface cursoProgramacao extends curso{
+    aulas:number;
+    maxAulas?:number;
+
+}
+interface cursoArtes extends curso{
+    aulas:number;
+    maxAulas?:number;
+
+}
 
 curso1={titulo:"typescript", desc:"Curso de typescript", aulas:100, maxAulas:50};
 

@@ -45,13 +45,22 @@ class Conta{
         }
     }
 }
-class ContaPF extends Conta{
+interface Tributos{
+    taxaCalculo:number;
+    CalcularTrib(valor:number):number;
+}
+
+class ContaPF extends Conta implements Tributos{
+     taxaCalculo=10;
     cpf:number;
 
     constructor(cpf:number,titular:string){
         super(titular);
         this.cpf=cpf;
     }
+     CalcularTrib(valor:number):number{
+         return valor*this.taxaCalculo
+     }
      info(){
         super.info();
         console.log(`cpf: ${this.cpf}`)
